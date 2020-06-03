@@ -1,0 +1,283 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> renders 1`] = `
+<div>
+  <div
+    class="ui container"
+  >
+    <div
+      class="ui segment"
+    >
+      <div
+        class="ui menu"
+      >
+        <div
+          class="item"
+        >
+          Key Picker
+        </div>
+        <div
+          class="item"
+        >
+          Chords
+        </div>
+        <div
+          class="item"
+        >
+          Secondary Dominants
+        </div>
+      </div>
+    </div>
+    <div
+      class="ui segment"
+    >
+      <div
+        aria-expanded="false"
+        class="ui fluid selection dropdown"
+        role="listbox"
+        tabindex="0"
+      >
+        <div
+          aria-atomic="true"
+          aria-live="polite"
+          class="text"
+          role="alert"
+        >
+          C
+        </div>
+        <i
+          aria-hidden="true"
+          class="dropdown icon"
+        />
+        <div
+          class="menu transition"
+        >
+          <div
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+            role="option"
+            style="pointer-events: all;"
+          >
+            <span
+              class="text"
+            >
+              F
+            </span>
+          </div>
+          <div
+            aria-checked="true"
+            aria-selected="true"
+            class="active selected item"
+            role="option"
+            style="pointer-events: all;"
+          >
+            <span
+              class="text"
+            >
+              C
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+            role="option"
+            style="pointer-events: all;"
+          >
+            <span
+              class="text"
+            >
+              G
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+            role="option"
+            style="pointer-events: all;"
+          >
+            <span
+              class="text"
+            >
+              D
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+            role="option"
+            style="pointer-events: all;"
+          >
+            <span
+              class="text"
+            >
+              A
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+            role="option"
+            style="pointer-events: all;"
+          >
+            <span
+              class="text"
+            >
+              E
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+            role="option"
+            style="pointer-events: all;"
+          >
+            <span
+              class="text"
+            >
+              B
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+            role="option"
+            style="pointer-events: all;"
+          >
+            <span
+              class="text"
+            >
+              Gb
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+            role="option"
+            style="pointer-events: all;"
+          >
+            <span
+              class="text"
+            >
+              Db
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+            role="option"
+            style="pointer-events: all;"
+          >
+            <span
+              class="text"
+            >
+              Ab
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+            role="option"
+            style="pointer-events: all;"
+          >
+            <span
+              class="text"
+            >
+              Eb
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+            role="option"
+            style="pointer-events: all;"
+          >
+            <span
+              class="text"
+            >
+              Bb
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        aria-expanded="false"
+        class="ui fluid selection dropdown"
+        role="listbox"
+        tabindex="0"
+      >
+        <div
+          aria-atomic="true"
+          aria-live="polite"
+          class="text"
+          role="alert"
+        >
+          Major
+        </div>
+        <i
+          aria-hidden="true"
+          class="dropdown icon"
+        />
+        <div
+          class="menu transition"
+        >
+          <div
+            aria-checked="true"
+            aria-selected="true"
+            class="active selected item"
+            role="option"
+            style="pointer-events: all;"
+          >
+            <span
+              class="text"
+            >
+              Major
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+            role="option"
+            style="pointer-events: all;"
+          >
+            <span
+              class="text"
+            >
+              Minor
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="ui segment"
+    >
+      <div
+        class="ui container"
+      >
+        Cmaj7 Dm7 Em7 Fmaj7 G7 Am7 Bm7b5
+      </div>
+    </div>
+    <div
+      class="ui segment"
+    >
+      <div
+        class="ui container"
+      >
+         A7 B7 C7 D7 E7 
+      </div>
+    </div>
+  </div>
+</div>
+`;

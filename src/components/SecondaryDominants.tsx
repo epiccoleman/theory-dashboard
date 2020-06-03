@@ -1,19 +1,15 @@
-import * as React from 'react'
-import { Key } from '@tonaljs/tonal';
+import React, { FunctionComponent } from 'react'
+
+import { Container } from 'semantic-ui-react';
+
+import { secondaryDominants, Mode } from '../lib/Theory';
 
 type SecondaryDominantsProps = {
     tonic: string,
-    mode: string
+    mode: Mode
 }
 
-const SecondaryDominants = ({tonic, mode}: SecondaryDominantsProps) => <div> {dominants(tonic, mode).join(" ")} </div>
+const SecondaryDominants: FunctionComponent<SecondaryDominantsProps> = ({tonic, mode}) =>
+    <Container>{secondaryDominants(tonic, mode).join(" ")}</Container>
 
-const dominants = (tonic: string, mode: string): Array<String> => {
-    return keyData(tonic, "Major").secondaryDominants.slice(1,6);
-}
-
-const keyData = (tonic: string, mode: string): object => {
-    return (mode == "Major" ? Key.majorKey(tonic) : Key.minorKey(tonic).natural);
-}
-
-export default SecondaryDominants; 
+export default SecondaryDominants;

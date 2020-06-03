@@ -13,3 +13,13 @@ export function chords(tonic: string, mode: Mode): readonly string[] {
         return Key.minorKey(tonic).natural.chords;
     }
 }
+
+export function secondaryDominants(tonic: string, mode: Mode): readonly string[] {
+    if (mode == Mode.Major){
+        return Key.majorKey(tonic).secondaryDominants;
+    }
+    if (mode == Mode.Minor){
+        let chords = Key.majorKey(Key.minorKey(tonic).relativeMajor).secondaryDominants
+        return [ ...chords.slice(5, 7), ...chords.slice(0, 5)]
+    }
+}
