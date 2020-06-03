@@ -1,0 +1,3 @@
+notes
+
+lots of components have to know about the Mode enum. should they?

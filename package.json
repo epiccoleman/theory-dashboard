@@ -1,0 +1,36 @@
+{
+  "name": "parcel-react-ts",
+  "version": "1.0.0",
+  "description": "Skeleton project using Parcel, React, Typescript",
+  "main": "index.js",
+  "repository": "https://github.com/epiccoleman/parcel-react-ts",
+  "author": "Eric Coleman",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "@testing-library/dom": "^7.9.0",
+    "@testing-library/jest-dom": "^5.9.0",
+    "@testing-library/react": "^10.0.6",
+    "@types/jest": "^25.2.3",
+    "babel-jest": "^26.0.1",
+    "jest": "^26.0.1",
+    "parcel-bundler": "^1.12.4",
+    "react-test-renderer": "^16.13.1",
+    "ts-jest": "^26.1.0",
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "@tonaljs/tonal": "^4.0.1",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.2"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  }
+}
