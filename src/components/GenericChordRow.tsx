@@ -1,19 +1,19 @@
 import React, { FunctionComponent } from 'react';
-import { Grid, Container } from "semantic-ui-react";
+import { Chords } from "../lib/Theory";
+import { Grid, ScaleDegree, Container } from "semantic-ui-react";
 
 type GenericChordRowProps = {
-    chordSymbols: readonly string[]
-    chordRomanNumerals: readonly string[]
+    chords: Chords
 }
 
-const GenericChordRow: FunctionComponent<GenericChordRowProps> = ({chordSymbols, chordRomanNumerals}) => {
+const GenericChordRow: FunctionComponent<GenericChordRowProps> = ({chords}) => {
     return (
         <Grid columns={1} divided>
             <Grid.Row textAlign='center' columns={7}>
-            {chordRomanNumerals.map((chordRomanNumeral) => <Grid.Column key={chordRomanNumeral}>{chordRomanNumeral}</Grid.Column>)}
+            {chords.map((degree) => <Grid.Column key={degree.romanNumeral}>{degree.romanNumeral}</Grid.Column>)}
             </Grid.Row>
             <Grid.Row textAlign='center' columns={7}>
-            {chordSymbols.map((chordSymbol) => <Grid.Column key={chordSymbol}>{chordSymbol}</Grid.Column>)}
+            {chords.map((degree) => <Grid.Column key={degree.chord}>{degree.chord}</Grid.Column>)}
             </Grid.Row>
         </Grid>
     )

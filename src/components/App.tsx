@@ -33,9 +33,9 @@ const App = () => {
             <Segment>
                 <Chords tonic={tonic} mode={mode} />
             </Segment>
-            <Segment>
+            {/* <Segment>
                 <SecondaryDominants tonic={tonic} mode={mode} />
-            </Segment>
+            </Segment> */}
         </Container>
             // <pre>{JSON.stringify(keyData(tonic, mode), null, 2)}</pre>
     );

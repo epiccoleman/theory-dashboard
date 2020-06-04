@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 import { chords, Mode } from '../lib/Theory'
 import GenericChordRow from "./GenericChordRow"
 
@@ -7,7 +7,7 @@ type ChordsProps = {
     mode: Mode
 }
 
-const Chords = ({tonic, mode}: ChordsProps) =>
-    <GenericChordRow chordSymbols={chords(tonic, mode)} chordRomanNumerals={["I", "ii", "iii", "IV", "V", "vi", "vii°"]} />
+const Chords: FunctionComponent<ChordsProps> = ({tonic, mode}) =>
+    <GenericChordRow chords={chords(tonic, mode)} />
 
 export default Chords;

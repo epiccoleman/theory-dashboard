@@ -1,16 +1,34 @@
-import { Key } from "@tonaljs/tonal";
+import { Key, Scale } from "@tonaljs/tonal";
 
 export enum Mode {
     Major = "major",
     Minor = "minor"
 }
 
-export function chords(tonic: string, mode: Mode): readonly string[] {
+export class ScaleDegree {
+    chord: string
+    romanNumeral: string
+    constructor(chord: string, romanNumeral: string){
+        this.chord = chord;
+        this.romanNumeral = romanNumeral;
+    }
+}
+
+export type Chords = readonly ScaleDegree[]
+
+export function chords(tonic: string, mode: Mode): Chords {
     if (mode == Mode.Major){
-        return Key.majorKey(tonic).chords;
+        let chordSymbols = Key.majorKey(tonic).chords
+        let romanNumerals = ["I", "ii", "iii", "IV", "V", "vi", "vii°"];
+        let chords:  Chords = chordSymbols.map((symbol, index) => new ScaleDegree(symbol, romanNumerals[index]));
+
+        return chords;
     }
     if (mode == Mode.Minor){
-        return Key.minorKey(tonic).natural.chords;
+        let chordSymbols = Key.minorKey(tonic).natural.chords
+        let romanNumerals = ["i", "ii°", "III", "iv", "v", "VI", "VII"];
+        let chords: ScaleDegree[] = chordSymbols.map((symbol, index) => new ScaleDegree(symbol, romanNumerals[index]));
+        return chords;
     }
 }
 
