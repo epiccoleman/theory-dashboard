@@ -264,18 +264,164 @@ exports[`<App /> renders 1`] = `
       class="ui segment"
     >
       <div
-        class="ui container"
+        class="ui divided one column grid"
       >
-        Cmaj7 Dm7 Em7 Fmaj7 G7 Am7 Bm7b5
+        <div
+          class="center aligned seven column row"
+        >
+          <div
+            class="column"
+          >
+            I
+          </div>
+          <div
+            class="column"
+          >
+            ii
+          </div>
+          <div
+            class="column"
+          >
+            iii
+          </div>
+          <div
+            class="column"
+          >
+            IV
+          </div>
+          <div
+            class="column"
+          >
+            V
+          </div>
+          <div
+            class="column"
+          >
+            vi
+          </div>
+          <div
+            class="column"
+          >
+            vii°
+          </div>
+        </div>
+        <div
+          class="center aligned seven column row"
+        >
+          <div
+            class="column"
+          >
+            Cmaj7
+          </div>
+          <div
+            class="column"
+          >
+            Dm7
+          </div>
+          <div
+            class="column"
+          >
+            Em7
+          </div>
+          <div
+            class="column"
+          >
+            Fmaj7
+          </div>
+          <div
+            class="column"
+          >
+            G7
+          </div>
+          <div
+            class="column"
+          >
+            Am7
+          </div>
+          <div
+            class="column"
+          >
+            Bm7b5
+          </div>
+        </div>
       </div>
     </div>
     <div
       class="ui segment"
     >
       <div
-        class="ui container"
+        class="ui divided one column grid"
       >
-         A7 B7 C7 D7 E7 
+        <div
+          class="center aligned seven column row"
+        >
+          <div
+            class="column"
+          />
+          <div
+            class="column"
+          >
+            V7/ii
+          </div>
+          <div
+            class="column"
+          >
+            V7/iii
+          </div>
+          <div
+            class="column"
+          >
+            V7/IV
+          </div>
+          <div
+            class="column"
+          >
+            V7/V
+          </div>
+          <div
+            class="column"
+          >
+            V7/vi
+          </div>
+          <div
+            class="column"
+          />
+        </div>
+        <div
+          class="center aligned seven column row"
+        >
+          <div
+            class="column"
+          />
+          <div
+            class="column"
+          >
+            A7
+          </div>
+          <div
+            class="column"
+          >
+            B7
+          </div>
+          <div
+            class="column"
+          >
+            C7
+          </div>
+          <div
+            class="column"
+          >
+            D7
+          </div>
+          <div
+            class="column"
+          >
+            E7
+          </div>
+          <div
+            class="column"
+          />
+        </div>
       </div>
     </div>
   </div>

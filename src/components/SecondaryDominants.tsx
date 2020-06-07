@@ -10,7 +10,9 @@ type SecondaryDominantsProps = {
     mode: Mode
 }
 
-const SecondaryDominants: FunctionComponent<SecondaryDominantsProps> = ({tonic, mode}) =>
-    <GenericChordRow chordSymbols={secondaryDominants(tonic, mode)} chordRomanNumerals={["", "V7/ii", "V7/iii", "V7/IV", "V7/V", "V7/vi", ""]}></GenericChordRow>
-
+const SecondaryDominants: FunctionComponent<SecondaryDominantsProps> = ({tonic, mode}) => {
+    let chords = secondaryDominants(tonic, mode)
+    console.log(`rendering with secondary dominants: ${chords}`)
+    return <GenericChordRow chords={chords} />
+}
 export default SecondaryDominants;
